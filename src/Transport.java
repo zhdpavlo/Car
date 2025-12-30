@@ -5,6 +5,9 @@ public abstract class Transport {
     private String color;
     private byte[] coordinate;
 
+
+
+
     //Join to DB
     public Transport(float _speed, int _weight, String _color, byte[] _coordinate){
         System.out.println("Object created");
@@ -18,7 +21,7 @@ public abstract class Transport {
         this.coordinate = coordinate;
         //System.out.println(getValues());
     }
-    public abstract void moveObject(float speed);
+     public abstract void moveObject(float speed);
     //Methode, bei der die Werte zu den Parametern zugehört werden
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate){
         speed = _speed;
@@ -40,5 +43,24 @@ public abstract class Transport {
 
     public void setColor(String color){
         this.color = color;
+    }
+
+    class Engine {
+        private boolean isReady;
+        private int km;
+
+        public void setValues(boolean isReady, int km){
+            this.isReady = isReady;
+            this.km = km;
+        }
+
+        public void isReady(boolean isReady){
+            this.isReady = isReady;
+        }
+
+        public void info(){
+            if(isReady) System.out.println("Engine goes well, it has only " + km + " kilometres");
+            else System.out.println("it doesn't work, it has already " + km + " kilometres");
+        }
     }
 }

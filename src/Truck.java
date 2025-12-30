@@ -1,11 +1,12 @@
 public class Truck extends Transport{
 
     private boolean isLoaded;
+    public Engine engine = new Engine();
 
-    public Truck(int weight, byte[] coordinate, boolean isLoaded){
-        super(weight, coordinate);
-        this.isLoaded = isLoaded;
-    }
+//    public Truck(int weight, byte[] coordinate, boolean isLoaded){
+//        super(weight, coordinate);
+//        this.isLoaded = isLoaded;
+//    }
 
     public Truck(int weight, byte[] coordinate){
         super(weight, coordinate);
@@ -23,7 +24,7 @@ public class Truck extends Transport{
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate, boolean isLoaded){
     super.setValues(_speed,_weight,_color,_coordinate);
     this.isLoaded = isLoaded;
-        System.out.println("second Method");
+    System.out.println("second Method");
     }
 
     @Override
@@ -32,12 +33,9 @@ public class Truck extends Transport{
         return getLoaded();
     }
 
-    public void setLoaded(boolean loaded){
-        isLoaded = loaded;
-    }
 
     public String getLoaded(){
-        if(isLoaded == true){
+        if(isLoaded){
             return "The truck is loaded";
         }else{
             return "The truck isn't loaded";
