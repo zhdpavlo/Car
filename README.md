@@ -30,6 +30,8 @@ It contains examples and exercises that demonstrate how core OOP principles work
 
 - #### Static modifier (static variables and methods)
 
+- #### Interfaces
+
 ## 🧠 What I Learned
 
 - How to design classes and objects properly
@@ -38,7 +40,7 @@ It contains examples and exercises that demonstrate how core OOP principles work
 
 - How polymorphism works through method overriding
 
-- When and why to use abstract classes
+- When and why to use abstract classes and interfaces
 
 - The difference between nested and anonymous classes
 

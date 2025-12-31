@@ -23,6 +23,8 @@ public abstract class Transport {
         this.coordinate = coordinate;
         //System.out.println(getValues());
     }
+
+    public Transport(){}
      public abstract void moveObject(float speed);
     //Methode, bei der die Werte zu den Parametern zugehört werden
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate){
