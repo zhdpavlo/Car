@@ -1,9 +1,11 @@
+package model;
+
 public class Truck extends Transport{
 
     private boolean isLoaded;
     public Engine engine = new Engine();
 
-//    public Truck(int weight, byte[] coordinate, boolean isLoaded){
+//    public model.Truck(int weight, byte[] coordinate, boolean isLoaded){
 //        super(weight, coordinate);
 //        this.isLoaded = isLoaded;
 //    }

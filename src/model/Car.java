@@ -1,3 +1,5 @@
+package model;
+
 public class Car extends Transport{
 
     public Engine engine = new Engine();
